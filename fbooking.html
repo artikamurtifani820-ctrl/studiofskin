@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Booking</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="fabout.html">About</a>
+    <a href="fgallery.html">Gallery</a>
+    <a href="fbooking.html">Booking</a>
+  </nav>
+</header>
+
+
+<section class="container">
+
+  <!-- PRICELIST -->
+  <div class="pricelist">
+    <div class="pricelist-card">
+      <img src="images/treatment-muka.jpeg">
+      <h3>Facial Treatment</h3>
+      <p>Mencerahkan & membersihkan wajah</p>
+      <span>Rp150.000</span>
+    </div>
+
+    <div class="pricelist-card">
+      <img src="images/acne-care-2.jpeg">
+      <h3>Acne Care</h3>
+      <p>Perawatan kulit berjerawat</p>
+      <span>Rp200.000</span>
+    </div>
+
+    <div class="pricelist-card">
+      <img src="images/brightenning.jpeg">
+      <h3>Brightening</h3>
+      <p>Membuat kulit tampak lebih cerah</p>
+      <span>Rp180.000</span>
+    </div>
+  </div>
+
+  <!-- BOOKING FORM -->
+  <section class="booking">
+    <form class="booking-form" id="bookingForm">
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="email" placeholder="Email" required>
+
+      <select required>
+        <option value="">Pilih Treatment</option>
+        <option>Facial Treatment</option>
+        <option>Acne Care</option>
+        <option>Brightening</option>
+      </select>
+
+      <input type="date" required>
+      <textarea placeholder="Catatan"></textarea>
+
+      <button type="submit">Booking Sekarang</button>
+    </form>
+
+    <p id="bookingMessage">
+      Terima kasih! Booking Anda berhasil.
+    </p>
+  </section>
+
+</section>
+
+
+<footer>
+  <p>© 2025 Artika Murtifani | 25011700309 | 01SIFP005</p>
+  <p id="waktu"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
